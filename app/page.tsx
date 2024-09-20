@@ -17,10 +17,8 @@ const Home: React.FC = () => {
           <p className="text-2xl  font-semibold">Let Your Beauty Shine.</p>
         </div>
       </div>
-        
-
+      
       </div>
-
     </VideoBackground>
   );
 };
