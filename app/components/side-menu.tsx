@@ -24,9 +24,9 @@ const SideMenu = () => {
                     {/*  */}
                     <div className="flex flex-col md:flex-row gap-4 mt-4 justify-between text-3xl px-24">
                         <Link href="/" className="text-gray-600 hover:underline hover:text-[#f1b0b6]">Home</Link>
-                        <Link href="/about" className="text-gray-600 hover:underline hover:text-[#f1b0b6]" >About</Link>
-                        <Link href="/services" className="text-gray-600 hover:underline hover:text-[#f1b0b6]">Services</Link>
-                        <Link href="/contact" className="text-gray-600 hover:underline hover:text-[#f1b0b6]">Contact</Link>
+                        <Link href="/aboutus" className="text-gray-600 hover:underline hover:text-[#f1b0b6]" >About</Link>
+                        <Link href="/service" className="text-gray-600 hover:underline hover:text-[#f1b0b6]">Services</Link>
+                        <Link href="/contactus" className="text-gray-600 hover:underline hover:text-[#f1b0b6]">Contact</Link>
                     </div>
                     <DrawerFooter className="mt-4">
                         <DrawerClose>
