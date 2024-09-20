@@ -5,9 +5,7 @@ const Home: React.FC = () => {
   return (
     <VideoBackground videoSrc="/video/my-bg.mp4">
       <div className='flex flex-col justify-between w-full flex-grow '>
-
         <div className=' flex-1 text-black bg-white w-full top-0'>
-              
         </div>
         <div className="relative z-20 flex flex-col justify-start  h-full text-white text-center">
         <Navigation />
@@ -16,11 +14,8 @@ const Home: React.FC = () => {
           <p className="mt-4 text-lg font-semibold">Let Your Talent Flourish</p><br></br>
           <p className="text-2xl  font-semibold">Let Your Beauty Shine.</p>
         </div>
+      </div>   
       </div>
-        
-
-      </div>
-
     </VideoBackground>
   );
 };
