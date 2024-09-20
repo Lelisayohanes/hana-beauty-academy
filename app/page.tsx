@@ -6,7 +6,6 @@ const Home: React.FC = () => {
   return (
     <VideoBackground videoSrc="/video/my-bg.mp4">
       <div className="flex flex-col justify-between w-full flex-grow">
-
         <div className='flex flex-col justify-between w-full flex-grow '>
           <div className="relative z-20 flex flex-col justify-start  h-full text-white text-center">
             <Navigation />
@@ -18,7 +17,6 @@ const Home: React.FC = () => {
           </div>
         </div>
       </div>
-
     </VideoBackground>
   );
 };
