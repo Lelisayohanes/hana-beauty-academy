@@ -1,6 +1,6 @@
 import React from 'react';
-import VideoBackground from '@/app/components/VideoBackground';
-import Navigation from '@/app/components/Navigation';
+import VideoBackground from './components/VideoBackground';
+import Navigation from './components/Navigation';
 
 const Home: React.FC = () => {
   return (
