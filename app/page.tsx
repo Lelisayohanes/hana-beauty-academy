@@ -1,23 +1,42 @@
-import React from 'react';
-import VideoBackground from './components/VideoBackground';
-import Navigation from './components/Navigation';
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import Navigation from "./components/Navigation";
+import HeroMessage from "./components/hero-message";
 
-const Home: React.FC = () => {
+export default function Home() {
   return (
-    <VideoBackground videoSrc="/video/my-bg.mp4">
-      <div className="flex flex-col justify-between w-full flex-grow">
-        <div className="relative z-20 flex flex-col justify-start h-full text-white text-center">
-          <Navigation />
-          <div className='flex flex-col justify-center items-center text-gray-950 bg-pink-50 lg:transparent lg:opacity-30 h-screen'>
-            <h1 className="sm:text-2xl md:text-4xl lg:text-6xl font-bold text-center mt-20">HANI BEAUTY ACADEMY</h1>
-            <p className="mt-4 text-lg font-semibold">Let Your Talent Flourish</p>
-            <br />
-            <p className="text-2xl font-semibold">Let Your Beauty Shine.</p>
+    <div style={{ position: 'relative', height: '100vh', width: '100%' }}>
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          zIndex: -1,
+        }}
+      >
+        <source src="/path-to-your-video.mp4" type="video/mp4" />
+        <source src="/video/my-bg.mp4" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
+
+      {/* Content */}
+      <div style={{ position: 'relative', zIndex: 1 }}>
+        <div className="flex justify-center items-center text-white flex-col bg-transparent h-screen">
+          <div className="flex flex-col justify-center items-center">
+            
           </div>
+          <HeroMessage/>
+          <Navigation />
         </div>
       </div>
-    </VideoBackground>
+    </div>
   );
-};
-
-export default Home;
+}

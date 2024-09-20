@@ -7,21 +7,18 @@ import {
     DrawerTrigger,
     DrawerFooter,
     DrawerClose,
-} from "@/components/ui/drawer"; // Adjust this path as necessary
+} from "@/components/ui/drawer"; 
+import { Button } from "@/components/ui/button";
 import { AlignJustify } from "lucide-react";
 import Link from "next/link";
 import React from 'react';
-import { Button } from "@/components/ui/button"; // Ensure Button component is correctly imported
 
 const SideMenu = () => {
     return (
-        <div className="relative">
+        <div className="flex justify-center items-center">
             <Drawer>
-            <DrawerTrigger>
-                    <div className="flex items-center gap-2 cursor-pointer">
-                        Menu
-                        <AlignJustify className="text-black opacity-100" />
-                    </div>
+                <DrawerTrigger className="border-2 border-black rounded-none bg-transparent text-black w-36 h-12 hover:bg-pink-100 hover:font-bold hover:scale-105 transition-transform duration-200">
+                     Service menu 
                 </DrawerTrigger>
                 <DrawerContent className="bg-slate-50 p-4">
                     {/*  */}
