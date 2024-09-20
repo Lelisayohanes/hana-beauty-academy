@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Navigation from "./components/Navigation";
+import HeroMessage from "./components/hero-message";
 
 export default function Home() {
   return (
@@ -21,26 +23,19 @@ export default function Home() {
         }}
       >
         <source src="/path-to-your-video.mp4" type="video/mp4" />
-        {/* You can add other video formats for cross-browser compatibility */}
         <source src="/video/my-bg.mp4" type="video/webm" />
         Your browser does not support the video tag.
       </video>
 
-      {/* Your content goes here */}
+      {/* Content */}
       <div style={{ position: 'relative', zIndex: 1 }}>
-        <div className="flex justify-center items-center text-black flex-col bg-transparent h-screen  ">
-        <div>HANI BEAUTY ACADEMY</div>
-        <h1>Welcome to the homepage!</h1>
-        <div className="flex gap-4">
-        <Button className="border-2 border-black rounded-none bg-transparent text-black w-32 hover:text-white">
-              About me
-        </Button>
-        <Button className="border-2 border-black rounded-none bg-transparent text-black w-32 hover:text-white">
-              Service menu 
-        </Button>
+        <div className="flex justify-center items-center text-white flex-col bg-transparent h-screen">
+          <div className="flex flex-col justify-center items-center">
+            
+          </div>
+          <HeroMessage/>
+          <Navigation />
         </div>
-        </div>
-        
       </div>
     </div>
   );
