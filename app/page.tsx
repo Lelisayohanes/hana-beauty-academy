@@ -1,5 +1,5 @@
-import VideoBackground from './components/VideoBackground';
-import Navigation from './components/Navigation';
+import VideoBackground from '@/app/components/VideoBackground';
+import Navigation from '@/app/components/Navigation';
 
 const Home: React.FC = () => {
   return (
@@ -16,6 +16,8 @@ const Home: React.FC = () => {
         </div>
       </div>   
       </div>
+      </div>
+
     </VideoBackground>
   );
 };
